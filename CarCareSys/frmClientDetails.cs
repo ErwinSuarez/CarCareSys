@@ -40,7 +40,7 @@ namespace CarCareSys
         {
             Close();
             System.Windows.Forms.MessageBox.Show("This should present confirmation message\n and then retreives the Clients details");
-            Close();
+
             parent.Show();
         }
     }
