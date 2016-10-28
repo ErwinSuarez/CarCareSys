@@ -37,9 +37,11 @@
             this.crewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registerCrewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.deregisterCrewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.listCrewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.servicesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.removeServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.appointmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.makeAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cancelAppointmentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -49,8 +51,6 @@
             this.revenueAnalysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.serviceAnalysisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.listCrewToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.removeServiceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -133,6 +133,12 @@
             this.deregisterCrewToolStripMenuItem.Text = "De-register crew";
             this.deregisterCrewToolStripMenuItem.Click += new System.EventHandler(this.deregisterCrewToolStripMenuItem_Click);
             // 
+            // listCrewToolStripMenuItem
+            // 
+            this.listCrewToolStripMenuItem.Name = "listCrewToolStripMenuItem";
+            this.listCrewToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
+            this.listCrewToolStripMenuItem.Text = "List Crew";
+            // 
             // servicesToolStripMenuItem
             // 
             this.servicesToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -146,14 +152,20 @@
             // newServiceToolStripMenuItem
             // 
             this.newServiceToolStripMenuItem.Name = "newServiceToolStripMenuItem";
-            this.newServiceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.newServiceToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.newServiceToolStripMenuItem.Text = "New Service";
             // 
             // updateServiceToolStripMenuItem
             // 
             this.updateServiceToolStripMenuItem.Name = "updateServiceToolStripMenuItem";
-            this.updateServiceToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.updateServiceToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
             this.updateServiceToolStripMenuItem.Text = "Update Service";
+            // 
+            // removeServiceToolStripMenuItem
+            // 
+            this.removeServiceToolStripMenuItem.Name = "removeServiceToolStripMenuItem";
+            this.removeServiceToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
+            this.removeServiceToolStripMenuItem.Text = "Remove Service";
             // 
             // appointmentsToolStripMenuItem
             // 
@@ -219,18 +231,6 @@
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
-            // listCrewToolStripMenuItem
-            // 
-            this.listCrewToolStripMenuItem.Name = "listCrewToolStripMenuItem";
-            this.listCrewToolStripMenuItem.Size = new System.Drawing.Size(160, 22);
-            this.listCrewToolStripMenuItem.Text = "List Crew";
-            // 
-            // removeServiceToolStripMenuItem
-            // 
-            this.removeServiceToolStripMenuItem.Name = "removeServiceToolStripMenuItem";
-            this.removeServiceToolStripMenuItem.Size = new System.Drawing.Size(157, 22);
-            this.removeServiceToolStripMenuItem.Text = "Remove Service";
-            // 
             // fromMenuMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -240,6 +240,7 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "fromMenuMain";
             this.Text = "Total Car Care System";
+            this.Load += new System.EventHandler(this.fromMenuMain_Load);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);

@@ -76,11 +76,11 @@
     <Compile Include="frmCarCareSYS.Designer.cs">
       <DependentUpon>frmCarCareSYS.cs</DependentUpon>
     </Compile>
-    <Compile Include="frmRegClient.cs">
+    <Compile Include="frmRegisterClient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="frmRegClient.Designer.cs">
-      <DependentUpon>frmRegClient.cs</DependentUpon>
+    <Compile Include="frmRegisterClient.Designer.cs">
+      <DependentUpon>frmRegisterClient.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,8 +93,8 @@
     <EmbeddedResource Include="frmCarCareSYS.resx">
       <DependentUpon>frmCarCareSYS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="frmRegClient.resx">
-      <DependentUpon>frmRegClient.cs</DependentUpon>
+    <EmbeddedResource Include="frmRegisterClient.resx">
+      <DependentUpon>frmRegisterClient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmClientDetails.resx">
       <DependentUpon>frmClientDetails.cs</DependentUpon>

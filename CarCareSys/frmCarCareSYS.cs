@@ -71,5 +71,10 @@ namespace CarCareSys
             Hide();
             frmUpDate.Show();
         }
+
+        private void fromMenuMain_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

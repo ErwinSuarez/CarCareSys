@@ -63,9 +63,10 @@
             this.lblSurname.AutoSize = true;
             this.lblSurname.Location = new System.Drawing.Point(21, 22);
             this.lblSurname.Name = "lblSurname";
-            this.lblSurname.Size = new System.Drawing.Size(55, 13);
+            this.lblSurname.Size = new System.Drawing.Size(33, 13);
             this.lblSurname.TabIndex = 104;
-            this.lblSurname.Text = "Surname: ";
+            this.lblSurname.Text = "DOB:";
+            this.lblSurname.Click += new System.EventHandler(this.lblSurname_Click);
             // 
             // txtClientSurname
             // 

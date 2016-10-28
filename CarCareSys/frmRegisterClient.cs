@@ -60,9 +60,33 @@ namespace CarCareSys
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Close();
-            System.Windows.Forms.MessageBox.Show("This should show confirmation message\n and then save the details");
-            parent.Show();
+            //validate data
+            if (txtSurname.Text.Equals(""))
+            {
+                MessageBox.Show("This field must be entered", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                txtSurname.Focus();
+                return;
+
+            }
+
+            if (chkTC.Checked== false)
+            {
+                MessageBox.Show("T&C must be accepted","Error!",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                return;
+            }
+
+            //Assign client ID
+
+            //save data
+
+            //display confirmation message
+            MessageBox.Show("Client 678 Registered", "Confirmation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            //reset UI
+            txtSurname.Text = "";
+            chkTC.Checked = false;
+            txtSurname.Focus();
+
         }
     }
 }

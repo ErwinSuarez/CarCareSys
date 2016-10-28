@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txtClientSurname = new System.Windows.Forms.TextBox();
+            this.txtSurname = new System.Windows.Forms.TextBox();
             this.lblClientSurName = new System.Windows.Forms.Label();
             this.lblClientForename = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -43,25 +43,26 @@
             this.lblClientTelephoneNumber = new System.Windows.Forms.Label();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.chkTC = new System.Windows.Forms.CheckBox();
             this.checkBox2 = new System.Windows.Forms.CheckBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.lblStreetAddress = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.lblTownAddress = new System.Windows.Forms.Label();
-            this.lblAddress = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.lblTownAddress = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.lblStreetAddress = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // txtClientSurname
+            // txtSurname
             // 
-            this.txtClientSurname.Location = new System.Drawing.Point(85, 21);
-            this.txtClientSurname.Name = "txtClientSurname";
-            this.txtClientSurname.Size = new System.Drawing.Size(200, 20);
-            this.txtClientSurname.TabIndex = 0;
+            this.txtSurname.Location = new System.Drawing.Point(85, 21);
+            this.txtSurname.Name = "txtSurname";
+            this.txtSurname.Size = new System.Drawing.Size(200, 20);
+            this.txtSurname.TabIndex = 0;
             // 
             // lblClientSurName
             // 
@@ -126,9 +127,11 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(85, 91);
+            this.dateTimePicker1.MaxDate = new System.DateTime(2016, 10, 28, 0, 0, 0, 0);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 4;
+            this.dateTimePicker1.Value = new System.DateTime(2016, 10, 28, 0, 0, 0, 0);
             this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // lblDateOfBirth
@@ -175,6 +178,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.chkTC);
             this.groupBox1.Controls.Add(this.checkBox2);
             this.groupBox1.Controls.Add(this.btnSave);
             this.groupBox1.Controls.Add(this.comboBox1);
@@ -194,82 +198,32 @@
             this.groupBox1.Controls.Add(this.lblClientForename);
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.lblClientSurName);
-            this.groupBox1.Controls.Add(this.txtClientSurname);
-            this.groupBox1.Location = new System.Drawing.Point(12, 30);
+            this.groupBox1.Controls.Add(this.txtSurname);
+            this.groupBox1.Location = new System.Drawing.Point(12, 90);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(446, 327);
             this.groupBox1.TabIndex = 109;
             this.groupBox1.TabStop = false;
             // 
-            // checkBox1
+            // chkTC
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(355, 24);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(49, 17);
-            this.checkBox1.TabIndex = 110;
-            this.checkBox1.Text = "Male";
-            this.checkBox1.UseVisualStyleBackColor = true;
+            this.chkTC.AutoSize = true;
+            this.chkTC.Location = new System.Drawing.Point(335, 227);
+            this.chkTC.Name = "chkTC";
+            this.chkTC.Size = new System.Drawing.Size(59, 17);
+            this.chkTC.TabIndex = 112;
+            this.chkTC.Text = "Signed";
+            this.chkTC.UseVisualStyleBackColor = true;
             // 
             // checkBox2
             // 
             this.checkBox2.AutoSize = true;
-            this.checkBox2.Location = new System.Drawing.Point(355, 55);
+            this.checkBox2.Location = new System.Drawing.Point(335, 57);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(60, 17);
             this.checkBox2.TabIndex = 111;
             this.checkBox2.Text = "Female";
             this.checkBox2.UseVisualStyleBackColor = true;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(85, 224);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(200, 20);
-            this.textBox3.TabIndex = 5;
-            // 
-            // lblStreetAddress
-            // 
-            this.lblStreetAddress.AutoSize = true;
-            this.lblStreetAddress.Location = new System.Drawing.Point(12, 227);
-            this.lblStreetAddress.Name = "lblStreetAddress";
-            this.lblStreetAddress.Size = new System.Drawing.Size(35, 13);
-            this.lblStreetAddress.TabIndex = 106;
-            this.lblStreetAddress.Text = "Street";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(85, 256);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(200, 20);
-            this.textBox2.TabIndex = 6;
-            // 
-            // lblTownAddress
-            // 
-            this.lblTownAddress.AutoSize = true;
-            this.lblTownAddress.Location = new System.Drawing.Point(12, 259);
-            this.lblTownAddress.Name = "lblTownAddress";
-            this.lblTownAddress.Size = new System.Drawing.Size(34, 13);
-            this.lblTownAddress.TabIndex = 107;
-            this.lblTownAddress.Text = "Town";
-            // 
-            // lblAddress
-            // 
-            this.lblAddress.AutoSize = true;
-            this.lblAddress.Location = new System.Drawing.Point(12, 197);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(45, 13);
-            this.lblAddress.TabIndex = 105;
-            this.lblAddress.Text = "Address";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 288);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(40, 13);
-            this.label1.TabIndex = 108;
-            this.label1.Text = "County";
             // 
             // comboBox1
             // 
@@ -312,11 +266,71 @@
             this.comboBox1.Size = new System.Drawing.Size(200, 21);
             this.comboBox1.TabIndex = 7;
             // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.Location = new System.Drawing.Point(335, 24);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(49, 17);
+            this.checkBox1.TabIndex = 110;
+            this.checkBox1.Text = "Male";
+            this.checkBox1.UseVisualStyleBackColor = true;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(12, 288);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(40, 13);
+            this.label1.TabIndex = 108;
+            this.label1.Text = "County";
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = true;
+            this.lblAddress.Location = new System.Drawing.Point(12, 197);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(45, 13);
+            this.lblAddress.TabIndex = 105;
+            this.lblAddress.Text = "Address";
+            // 
+            // lblTownAddress
+            // 
+            this.lblTownAddress.AutoSize = true;
+            this.lblTownAddress.Location = new System.Drawing.Point(12, 259);
+            this.lblTownAddress.Name = "lblTownAddress";
+            this.lblTownAddress.Size = new System.Drawing.Size(34, 13);
+            this.lblTownAddress.TabIndex = 107;
+            this.lblTownAddress.Text = "Town";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(85, 256);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(200, 20);
+            this.textBox2.TabIndex = 6;
+            // 
+            // lblStreetAddress
+            // 
+            this.lblStreetAddress.AutoSize = true;
+            this.lblStreetAddress.Location = new System.Drawing.Point(12, 227);
+            this.lblStreetAddress.Name = "lblStreetAddress";
+            this.lblStreetAddress.Size = new System.Drawing.Size(35, 13);
+            this.lblStreetAddress.TabIndex = 106;
+            this.lblStreetAddress.Text = "Street";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(85, 224);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(200, 20);
+            this.textBox3.TabIndex = 5;
+            // 
             // frmRegisterClient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(472, 368);
+            this.ClientSize = new System.Drawing.Size(472, 438);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
@@ -333,7 +347,7 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txtClientSurname;
+        private System.Windows.Forms.TextBox txtSurname;
         private System.Windows.Forms.Label lblClientSurName;
         private System.Windows.Forms.Label lblClientForename;
         private System.Windows.Forms.TextBox textBox1;
@@ -357,5 +371,6 @@
         private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lblStreetAddress;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.CheckBox chkTC;
     }
 }
